@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block title %}{{course.title}}{% endblock %}
+
+{% block content_1 %}
+<h1 class='mt-5'>{{course.title}}</h1>
+<h2>{{course.category}}</h2>
+<h3>
+    This is a {{course.title}}. In this course you will get knowledge of how to use Python to create web applications and etc. There are {{course.students_qty}} students studying already.
+</h3>
+<p>Price: {{course.price}}</p>
+<p>Students quantity: {{course.students_qty}}</p>
+<button class="btn btn-primary">Buy</button>
+{% endblock %}
